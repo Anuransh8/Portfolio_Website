@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio_Website/static/css/main.a01249af.css",
+    "main.js": "/Portfolio_Website/static/js/main.9d194353.js",
+    "static/media/port2.png": "/Portfolio_Website/static/media/port2.424075b9f7dca23851d6.png",
+    "static/media/astube.png": "/Portfolio_Website/static/media/astube.ebe013e9c59cd05d4330.png",
+    "static/media/dashboard.png": "/Portfolio_Website/static/media/dashboard.901c80c91366d14145cc.png",
+    "static/media/threed.png": "/Portfolio_Website/static/media/threed.4fa54771866dfb76775b.png",
+    "static/media/musicapp.png": "/Portfolio_Website/static/media/musicapp.f1c301f91904ef5f9249.png",
+    "static/media/resume.pdf": "/Portfolio_Website/static/media/resume.d7dfea41344d7007be0e.pdf",
+    "static/media/wave.png": "/Portfolio_Website/static/media/wave.92f7ff0d1298a67fe08e.png",
+    "static/media/glasses.png": "/Portfolio_Website/static/media/glasses.958943c3938f1d7752ce.png",
+    "static/media/database.png": "/Portfolio_Website/static/media/database.177db98094f954fd8afc.png",
+    "static/media/thumbup.png": "/Portfolio_Website/static/media/thumbup.2ba474ffb2ac384269a7.png",
+    "static/media/humble.png": "/Portfolio_Website/static/media/humble.9787c0097c56e3801093.png",
+    "static/media/anuranshweb.png": "/Portfolio_Website/static/media/anuranshweb.4d926d26c99df489b760.png",
+    "static/media/educationemoji.png": "/Portfolio_Website/static/media/educationemoji.398a4f9a301f69eca961.png",
+    "index.html": "/Portfolio_Website/index.html",
+    "main.a01249af.css.map": "/Portfolio_Website/static/css/main.a01249af.css.map",
+    "main.9d194353.js.map": "/Portfolio_Website/static/js/main.9d194353.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a01249af.css",
+    "static/js/main.9d194353.js"
+  ]
+}
