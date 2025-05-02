@@ -1,0 +1,117 @@
+.portfolio-section {
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 130px;
+}
+
+/* heading */
+.portfolio-header span:nth-of-type(1) {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.portfolio-header span:nth-of-type(2) {
+  color:  #1E90FF;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text-anime-style {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.marketer {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  margin-top: 130px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-img {
+  height:250px;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.portfolio-item:hover .portfolio-img {
+  transform: scale(1.1);
+}
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;         /* vertical stacking */
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7); /* slightly darker for text clarity */
+  backdrop-filter: blur(6px);     /* stronger blur */
+  color: #3399ff;                 /* medium-bright blue */
+  padding: 2rem;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.portfolio-overlay h4 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-overlay p {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 80%;
+  line-height: 1.6;
+  color: #dbe9ff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Show overlay only on hover */
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px)  {
+  .portfolio-section {
+    margin-top: 300px;
+  }
+  .portfolio-header h2 {
+    font-size: 28px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio-section {
+    margin-top: 130px;
+  }
+}

@@ -1,0 +1,192 @@
+.Intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+
+/* Left Side Styling */
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(2) {
+  color: #1E90FF; /* Neon Blue */
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 20px;
+  color: var(--gray);
+  margin-top: 10px;
+}
+.i-button {
+  width: 6rem;
+  height: 2rem;
+}
+.i-icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0rem;
+}
+.i-icons > * {
+  transform: scale(0.5);
+}
+.i-icons > *:hover {
+  cursor: pointer;
+}
+
+/* Right Side Styling */
+.i-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Behind Boy */
+.i-ground-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 400px;
+}
+
+/* neon */
+.i-oval-platform {
+  position: absolute;
+  bottom: 80px;
+  width: 380px;
+  height: 60px;
+  right: -195px;
+  bottom: 70px;
+  background: radial-gradient(ellipse at center, #0a0a0a, #111);
+  border-radius: 50%;
+  box-shadow:
+    0 0 20px rgba(0, 153, 255, 0.7),
+    0 0 40px rgba(0, 153, 255, 0.4),
+    inset 0 0 30px rgba(0, 153, 255, 0.3);
+  border: 2px solid #00ccff;
+  z-index: 0;
+  animation: neonPulse 2.5s infinite ease-in-out;
+}
+
+/* Boy Image Styling */
+.i-boy-wrapper {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -30px; /* Lift image above the oval */
+  right: -170px;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.3),
+    0 0 18px rgba(0, 153, 255, 0.5);
+  border: 3px solid rgba(0, 153, 255, 0.6);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.2));
+}
+
+.i-boy {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -50px; /* Shift image upward to avoid cropping top */
+}
+
+.floating-div {
+  position: absolute;
+  z-index: 3;
+  width: max-content;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* animation */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 20px rgba(0, 153, 255, 0.7),
+      0 0 40px rgba(0, 153, 255, 0.4),
+      inset 0 0 30px rgba(0, 153, 255, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 30px rgba(0, 153, 255, 1),
+      0 0 60px rgba(0, 153, 255, 0.6),
+      inset 0 0 40px rgba(0, 153, 255, 0.4);
+  }
+}
+
+
+/* Floating Elements */
+.i-right > * {
+  position: absolute;
+  z-index: 2;
+}
+
+/* Blur */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+}
+
+@media screen and (max-width: 480px) {
+  .Intro {
+    flex-direction: column;
+    gap: 7rem;
+    height: 64rem;
+  }
+
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .i-right .blur {
+    display: none;
+  }
+  .floating-div:nth-of-type(1) {
+    top: -7rem !important;
+  }
+}

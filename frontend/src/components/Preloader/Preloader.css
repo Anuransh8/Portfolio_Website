@@ -1,0 +1,73 @@
+.cs_preloader {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(261deg, #fff -5.9%, #fff1ef 23.95%, #e0f0ff 160.95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cs_preloader_bg {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cs_preloader_in {
+    width: 90px; /* 25% smaller */
+    height: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Adjusted for better alignment */
+    border: 3px solid rgba(135, 206, 250, 0.2); /* Light blue border */
+    border-radius: 50%;
+  }
+  
+  .cs_preloader_in:after {
+    content: "";
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #87CEFA; /* Light blue */
+    border-radius: 50%;
+    position: absolute;
+    width: 100%; /* Adjusted size */
+    height: 100%;
+    left: 0;
+    top: 0;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  .cs_preloader_in::before {
+    content: "";
+    height: 8px; /* Slightly smaller */
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #342ead; /* Dark blue */
+    animation: rotation_3 3s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

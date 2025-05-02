@@ -1,0 +1,108 @@
+.about {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+  margin-bottom: 13rem;
+  /* scroll view */
+  padding-top: 3rem;
+}
+/* left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.awesome > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#aboutintro1 {
+  color: #1E90FF; /* Neon Blue */
+  font-size: 30px;
+  font-weight: bold;
+}
+#aboutintro2 {
+  color: var(--gray);
+  font-size: 18px;
+  margin-top: 1rem;
+}
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+/* right sided */
+.cards {
+  position: relative;
+}
+.cards > * {
+  position: absolute;
+}
+
+/* blur */
+.s-blur2 {
+  left: 14rem;
+  top: 8rem;
+}
+
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: auto; /* Adjusted for proper mobile height */
+    padding: 0 1.5rem; /* Added padding for better spacing */
+  }
+
+  .awesome {
+    text-align: left; /* Keep text aligned naturally */
+  }
+
+  .awesome > :nth-child(1) {
+    font-size: 2rem; /* Adjusted heading size */
+  }
+
+  #aboutintro1 {
+    font-size: 24px; /* Slightly reduced for better fit */
+    line-height: 1.4; /* Improved line spacing */
+    display: block; /* Ensures text flows properly */
+  }
+
+  #aboutintro2 {
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: normal; /* Ensures text wraps properly */
+    word-wrap: break-word; /* Prevents overflow */
+  }
+
+  .s-button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+  .cards > * {
+    position: static;
+  }
+
+  /* Blur effect adjustments */
+  .s-blur1, .s-blur2 {
+    display: none; /* Hide unnecessary blur on mobile */
+  }
+}
