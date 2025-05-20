@@ -56,7 +56,7 @@ const Intro = () => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1.5, ease: "easeOut" }}
   >
-    <img src={boy} alt="Anuransh" className="i-boy" />
+{/*     <img src={boy} alt="Anuransh" className="i-boy" /> */}
   </motion.div>
 </div>
 
