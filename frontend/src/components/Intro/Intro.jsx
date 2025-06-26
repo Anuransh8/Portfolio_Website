@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import boy from "../../img/port2.png";
+import boy from "../../img/boy.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
@@ -39,7 +39,7 @@ const Intro = () => {
         <div className="i-icons">
           <a href="https://github.com/Anuransh8"><img src={Github} alt="" /></a>
           <a href="https://www.linkedin.com/in/anuransh-srivastava-1b72a7265/"><img src={LinkedIn} alt="" /></a>
-          <a href="#"><img src={Instagram} alt="" /></a>
+          <a href="https://www.instagram.com/anuransh_._"><img src={Instagram} alt="" /></a>
           <a href="https://x.com/Anuransh8"><img src={X} alt="" /></a>
         </div>
       </div>

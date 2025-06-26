@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="footer-section social">
           <h3 className="footer-title">Follow Me</h3>
           <div className="social-icons">
-            <a href="https://instagram.com/anuransh7" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/anuransh_._" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="https://github.com/Anuransh8" target="_blank" rel="noopener noreferrer">

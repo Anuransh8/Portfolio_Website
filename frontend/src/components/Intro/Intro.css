@@ -106,10 +106,11 @@
 }
 
 .i-boy {
-  width: 100%;
+  width: auto;
   height: auto;
   position: absolute;
-  top: -50px; /* Shift image upward to avoid cropping top */
+  top: 20px; /* Shift image upward to avoid cropping top */
+  left: 35px;
 }
 
 .floating-div {
